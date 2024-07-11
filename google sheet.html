@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Google Sheet.css">
+</head>
+<body>
+	<div class="container">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbw-lo86-zKMrvKgDpdoXHmRGBg7aroU9VmkSF9paHounafPdxPyIkJ79AmlR4sHLBBsXQ/exec" name="form">
+			<h4>콜택시 이용입력 FORM</h4>
+			<label for="이용자">이용자:</label>
+			<input type="text" name="이용자" placeholder="Name">
+			<label for="date">Date:</label>
+			<input type="date" name="date" >
+			<label for="time">Time:</label>
+			<input type="time" name="time" >
+			<label for="number">차량번호:</label>
+			<select id="number" name="number" multiple size="1" required autofocus>  
+				<option value="4055">4055</option>
+				<option value="7775">7775</option>  
+				<option value="7716">7716</option>   
+				<option value="4530">4530</option> 
+				<option value="7419">7419</option>  
+				<option value="2227">2227</option>
+				<option value="2082">2082</option>  
+				<option value="3614">3614</option>
+				<option value="기타">기타</option>  
+			</select></br>				
+			<label for="reason">이용내역:</label>
+			<select id="reason" name="reason" multiple size="1" required autofocus>  
+				<option value="박모출근">박모출근</option>
+				<option value="박모퇴근">박모퇴근</option>  
+				<option value="3rd출근">3rd출근</option>   
+				<option value="3rd퇴근">3rd퇴근</option> 
+				<option value="4th출근">4th출근</option>  
+				<option value="4th퇴근">4th퇴근</option>
+				<option value="N출근">N출근</option>  
+				<option value="N퇴근">N퇴근</option>
+				<option value="1st출근">1st출근</option>  
+				<option value="1st퇴근">1st퇴근</option>
+				<option value="2nd출근">2nd출근</option>  
+				<option value="2nd퇴근">2nd퇴근</option>
+			</select></br>
+			<label for="message">특이사항:</label>
+			<textarea id="message" name="message" rows="4" cols="50" placeholder="특이사항 입력란"></textarea>
+			<br>	
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</div>
+
+	<script src="Google Sheet.js"></script>
+</body>
+</html>
